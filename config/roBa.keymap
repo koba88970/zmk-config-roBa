@@ -101,24 +101,24 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                      &kp NUMBER_6  &kp N7  &kp N8     &kp N9            &kp N0
-&kp TAB         &trans        &trans        &trans        &trans  &trans      &trans  &trans        &trans  &trans     &kp MINUS         &kp EQUAL
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans  &trans      &trans  &trans        &trans  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans          &trans        &trans        &trans        &trans  &trans      &trans  &trans                                             &kp BACKSLASH
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                          &kp NUMBER_6  &kp N7  &kp N8     &kp N9            &kp N0
+&kp TAB         &trans        &trans        &trans        &trans  &kp LG(N0)      &trans  &trans        &trans  &trans     &kp MINUS         &kp EQUAL
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans  &trans          &trans  &trans        &trans  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans          &trans        &trans        &trans        &trans  &trans          &trans  &trans                                             &kp BACKSLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LG(RIGHT_BRACKET)) LS(LG(LEFT_BRACKET))>;
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
 
         ARROW {
             bindings = <
-&trans  &trans                  &kp LG(W)             &trans                   &trans                         &kp LC(UP_ARROW)  &kp LS(LC(LG(NUMBER_4)))  &kp UP_ARROW    &trans           &trans
-&trans  &kp LA(LG(LEFT_ARROW))  &kp LG(T)             &kp LA(LG(RIGHT_ARROW))  &trans  &trans      &trans     &trans            &kp LEFT_ARROW            &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &trans  &trans      &trans     &trans            &trans                    &trans          &trans           &trans
-&trans  &trans                  &trans                &trans                   &trans  &trans      &kp LG(C)  &kp LG(V)                                                                    &trans
+&trans  &trans                &kp LG(W)  &trans                 &trans                         &kp LC(UP_ARROW)  &kp LS(LC(LG(NUMBER_4)))  &kp UP_ARROW    &trans           &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(T)  &kp LG(RIGHT_BRACKET)  &trans  &trans      &trans     &trans            &kp LEFT_ARROW            &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans                &trans     &trans                 &trans  &trans      &trans     &trans            &trans                    &trans          &trans           &trans
+&trans  &trans                &trans     &trans                 &trans  &trans      &kp LG(C)  &kp LG(V)                                                                    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LS(LG(RIGHT_BRACKET)) LS(LG(LEFT_BRACKET))>;
         };
 
         MOUSE {
