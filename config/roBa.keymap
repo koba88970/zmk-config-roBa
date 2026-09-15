@@ -106,6 +106,8 @@
 &kp LEFT_SHIFT  &trans        &trans        &trans        &trans  &trans      &trans  &trans        &trans  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans          &trans        &trans        &trans        &trans  &trans      &trans  &trans                                             &kp BACKSLASH
             >;
+
+            sensor-bindings = <&inc_dec_kp LS(LG(RIGHT_BRACKET)) LS(LG(LEFT_BRACKET))>;
         };
 
         ARROW {
