@@ -94,7 +94,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 2 LANGUAGE_2  &lt 3 SPACE  &lt_to_layer_0 4 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                                &kp MINUS
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp LG(Z) LG(LS(Z))>;
         };
 
         FUNCTION {
@@ -118,7 +118,7 @@
         MOUSE {
             bindings = <
 &trans  &trans                    &kp LG(W)  &trans                     &trans                         &trans     &kp LC(UP_ARROW)  &kp LS(LC(LG(NUMBER_4)))  &trans    &trans
-&trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(T)  &kp LG(LS(RIGHT_BRACKET))  &trans  &trans      &trans     &trans     &mkp MB1          &mkp MB3                  &mkp MB2  &mo 4
+&trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(T)  &kp LG(LS(RIGHT_BRACKET))  &trans  &trans      &trans     &mo 4      &mkp MB1          &mkp MB3                  &mkp MB2  &trans
 &trans  &trans                    &trans     &trans                     &trans  &trans      &trans     &trans     &trans            &trans                    &trans    &trans
 &trans  &trans                    &trans     &trans                     &trans  &trans      &kp LG(C)  &kp LG(V)                                                        &trans
             >;
