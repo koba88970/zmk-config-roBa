@@ -127,7 +127,7 @@
         MOUSE {
             bindings = <
 &trans  &trans                    &kp LG(W)             &trans                     &trans                         &trans     &kp LC(UP_ARROW)  &kp LS(LC(LG(NUMBER_4)))  &trans    &trans
-&trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(T)             &kp LG(LS(RIGHT_BRACKET))  &trans  &trans      &trans     &mo 5      &mkp MB1          &mkp MB3                  &mkp MB2  &trans
+&trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(T)             &kp LG(LS(RIGHT_BRACKET))  &trans  &trans      &trans     &trans     &mkp MB1          &mkp MB3                  &mkp MB2  &mo 5
 &trans  &trans                    &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)      &trans  &trans      &trans     &trans     &trans            &trans                    &trans    &trans
 &trans  &trans                    &trans                &trans                     &trans  &trans      &kp LG(C)  &kp LG(V)                                                        &trans
             >;
@@ -138,6 +138,7 @@
              「1」が出る      → レイヤー5に入れている（＝スクロール側の問題）
              クリックされる   → レイヤー4止まり（＝&mo 5 が効いていない）
            原因が分かったら &kp N1 は &trans に戻す */
+
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
