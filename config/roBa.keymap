@@ -74,6 +74,18 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        /* エンコーダで本物のマウスホイールを送る。
+           &kp 系のキーコード（C_AC_SCROLL_UP など）は macOS が解釈しないため、
+           ポインティング用の &msc を呼び出す。
+           ・回す向きが逆なら SCRL_UP と SCRL_DOWN を入れ替える
+           ・1ノッチあたりのスクロール量が足りなければ tap-ms を増やす */
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <30>;
+        };
     };
 
     keymap {
@@ -87,7 +99,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 6 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                                &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         FUNCTION {
