@@ -9,6 +9,7 @@
    タイピングが追いつかなくなる。
    ・まだ取りこぼすなら 150 → 200 と上げる
    ・逆にレイヤーに入りにくいと感じたら 100 に下げる */
+
 &mt {
     flavor = "balanced";
     tapping-term-ms = <200>;
@@ -87,6 +88,7 @@
             /* flavor 未指定だと ZMK 既定の hold-preferred になり、
                「他キーを押した瞬間にレイヤー確定」という最も誤爆しやすい動作になる。
                英数・かなは日本語入力で連打するので、明示的に balanced にする */
+
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
@@ -134,19 +136,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans                    &kp LG(W)  &trans                     &trans                         &trans     &kp LC(UP_ARROW)  &kp LS(LC(LG(NUMBER_4)))  &trans    &trans
-&trans  &kp LG(LS(LEFT_BRACKET))  &kp LG(T)  &kp LG(LS(RIGHT_BRACKET))  &trans  &trans      &trans     &mo 4      &mkp MB1          &mkp MB3                  &mkp MB2  &trans
-&trans  &trans                    &trans     &trans                     &trans  &trans      &trans     &trans     &trans            &trans                    &trans    &trans
-&trans  &trans                    &trans     &trans                     &trans  &trans      &kp LG(C)  &kp LG(V)                                                        &trans
+&trans  &trans          &kp UP_ARROW    &trans           &trans                         &trans     &kp LC(UP_ARROW)  &kp LS(LC(LG(NUMBER_4)))  &trans    &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans     &mo 4      &mkp MB1          &mkp MB3                  &mkp MB2  &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &trans     &trans     &trans            &trans                    &trans    &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &kp LG(C)  &kp LG(V)                                                        &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans     &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(C)  &kp LG(V)                                                   &trans
+&trans  &trans  &trans  &trans  &trans                         &trans     &trans                    &kp LG(W)  &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &kp LS(LG(LEFT_BRACKET))  &kp LG(T)  &kp LS(LG(RIGHT_BRACKET))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans                    &trans     &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(C)  &kp LG(V)                                                                  &trans
             >;
         };
 
