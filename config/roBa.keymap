@@ -56,12 +56,12 @@
             key-positions = <18 19>;
         };
 
-        Cmd+A {
+        CmdA {
             bindings = <&kp LG(A)>;
             key-positions = <12 13>;
         };
 
-        Cmd+Z {
+        CmdZ {
             bindings = <&kp LG(Z)>;
             key-positions = <25 24>;
         };
