@@ -75,6 +75,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <30 31>;
         };
+
+        Exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
