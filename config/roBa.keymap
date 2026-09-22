@@ -128,7 +128,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 2 LANGUAGE_2  &lt 3 SPACE  &lt_to_layer_0 4 LANGUAGE_1      &kp BACKSPACE  &mt LEFT_SHIFT ENTER                                &lt 1 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(Z) LG(LS(Z))>;
+            sensor-bindings = <&inc_dec_kp LG(LEFT_ARROW) LG(RIGHT_ARROW)>;
         };
 
         FUNCTION {
