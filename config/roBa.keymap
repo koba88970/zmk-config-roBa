@@ -113,7 +113,7 @@
 
             flavor = "balanced";
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <80>;
         };
 
         /* エンコーダで本物のマウスホイールを送る。
