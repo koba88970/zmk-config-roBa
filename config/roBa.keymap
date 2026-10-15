@@ -49,36 +49,43 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         CmdA {
             bindings = <&kp LG(A)>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         CmdZ {
             bindings = <&kp LG(Z)>;
             key-positions = <25 24>;
+            layers = <0>;
         };
 
         Clipy {
             bindings = <&kp LG(LS(V))>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <30 31>;
+            layers = <0>;
         };
 
         Exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <31 32>;
+            layers = <0>;
         };
     };
 
