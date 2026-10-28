@@ -21,7 +21,7 @@
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <50>;
 };
 
 &trackball {
@@ -56,13 +56,18 @@
            位置をどこへ移しても、この保留自体は無くならない。
 
            ・コンボが出にくい → 80, 50 と下げる
-           ・まだキーが抜ける → 150 と上げる */
+           ・まだキーが抜ける → 150 と上げる
+
+           timeout-ms = 相方を待つ時間。既定 50 を 30 に短縮してある。
+           待つ時間が短いほど、構成キーが詰まりにくい。
+           コンボが成立しにくければ 40, 50 と戻す */
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <24 25>;
             layers = <0>;
             require-prior-idle-ms = <100>;
+            timeout-ms = <30>;
         };
 
         question {
@@ -70,6 +75,7 @@
             key-positions = <30 31>;
             layers = <0>;
             require-prior-idle-ms = <100>;
+            timeout-ms = <30>;
         };
 
         Exclamation {
@@ -77,6 +83,7 @@
             key-positions = <31 32>;
             layers = <0>;
             require-prior-idle-ms = <100>;
+            timeout-ms = <30>;
         };
     };
 
