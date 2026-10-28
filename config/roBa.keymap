@@ -60,13 +60,13 @@
 
         CmdA {
             bindings = <&kp LG(A)>;
-            key-positions = <12 13>;
+            key-positions = <13 14>;
             layers = <0>;
         };
 
         CmdZ {
             bindings = <&kp LG(Z)>;
-            key-positions = <25 24>;
+            key-positions = <25 26>;
             layers = <0>;
         };
 
