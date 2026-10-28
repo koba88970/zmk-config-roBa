@@ -46,22 +46,37 @@
     combos {
         compatible = "zmk,combos";
 
+        /* ★ require-prior-idle-ms は消さないこと ★
+           KeymapEditor でコンボを編集すると、この行は毎回削除される。
+           編集したら GitHub でこの行を戻すこと。
+
+           役割: 直前にこの時間だけ打鍵が無ければコンボを受け付ける。
+           これが無いと、構成キー（C V M , . ）は押すたびに
+           「相方が来るか」を待って保留され、高速入力でキーが抜ける。
+           位置をどこへ移しても、この保留自体は無くならない。
+
+           ・コンボが出にくい → 80, 50 と下げる
+           ・まだキーが抜ける → 150 と上げる */
+
         minus {
             bindings = <&kp MINUS>;
             key-positions = <24 25>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <30 31>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         Exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <31 32>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
     };
 
