@@ -46,33 +46,21 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-            layers = <0>;
-        };
-
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <23 24>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
         CmdA {
             bindings = <&kp LG(A)>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
             layers = <0>;
         };
 
         CmdZ {
             bindings = <&kp LG(Z)>;
-            key-positions = <25 26>;
-            layers = <0>;
-        };
-
-        Clipy {
-            bindings = <&kp LG(LS(V))>;
-            key-positions = <20 21>;
+            key-positions = <25 24>;
             layers = <0>;
         };
 
@@ -167,10 +155,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans     &trans                    &trans     &trans                     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans                    &kp LG(W)  &trans                     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &kp LS(LG(LEFT_BRACKET))  &kp LG(T)  &kp LS(LG(RIGHT_BRACKET))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(C)  &kp LG(V)                                                                  &trans
+&trans  &trans  &trans  &trans  &trans                         &trans         &trans                    &trans     &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans         &trans                    &kp LG(W)  &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans         &kp LS(LG(LEFT_BRACKET))  &kp LG(T)  &kp LS(LG(RIGHT_BRACKET))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(C)  &kp LG(LS(V))                                                                  &trans
             >;
         };
 
